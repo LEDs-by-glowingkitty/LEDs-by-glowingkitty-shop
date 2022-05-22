@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>LEDs by glowingkitty - Shop</title>
+    <meta property="og:title" content="LEDs by glowingkitty - Shop" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: LexendDeca-Regular;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+
+
+
+      @font-face {
+            font-display: block;
+            font-family: Roboto;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 600;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+        }
+
+        @font-face {
+            font-display: fallback;
+            font-family: Roboto;
+            font-weight: 700;
+            src: url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.sendinblue.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+        }
+
+        #sib-container input:-ms-input-placeholder {
+            text-align: left;
+            font-family: "Helvetica", sans-serif;
+            color: #c0ccda;
+        }
+
+        #sib-container input::placeholder {
+            text-align: left;
+            font-family: "Helvetica", sans-serif;
+            color: #c0ccda;
+        }
+
+        #sib-container textarea::placeholder {
+            text-align: left;
+            font-family: "Helvetica", sans-serif;
+            color: #c0ccda;
+        }
+    </style>
+    <link rel="stylesheet" href="./sib-styles.css">
+    <link rel="stylesheet" href="./style.css" />
+    
+
+    <script>
+        function triggerprivacy() {
+            document.getElementById("imprint").classList.remove("open")
+            if (document.getElementById("privacy").classList.contains("open")){
+                document.getElementById("privacy").classList.remove("open");
+            } else {
+                document.getElementById("privacy").classList.add("open");
+            }
+        };
+
+        function triggerimprint() {
+            document.getElementById("privacy").classList.remove("open")
+            if (document.getElementById("imprint").classList.contains("open")){
+                document.getElementById("imprint").classList.remove("open");
+            } else {
+                document.getElementById("imprint").classList.add("open");
+            }
+        };
+
+        function triggernewsletter(){
+            if (document.getElementById("sib-container").style.height == "0px"){
+                document.getElementById("sib-container").style.height = "auto";
+                document.getElementById("sib-container").style.opacity = "1";
+            } else {
+                document.getElementById("sib-container").style.height = "0px";
+                document.getElementById("sib-container").style.opacity = "0";
+            }
+        }
+
+
+    </script>
+
+  </head>
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div id="headerimage" class="home-header headerimage">
+          <h1 class="home-text">
+            <span class="home-text01">Let it</span>
+            <span class="home-text02">glow!</span>
+          </h1>
+        </div>
+        <div class="home-main-content">
+          <span class="regulartext">
+            <span>This store is currently in development.</span>
+            <br />
+            <span>Subscribe our newsletter or follow us</span>
+            <br />
+            <span>on social media for more updates!</span>
+          </span>
+          <div class="home-subscribe-options">
+            <a class="home-link" onclick="triggernewsletter()">
+                <img
+                src="images/mdi_email-newsletter.svg"
+                class="socialmediaicon"
+                />
+            </a>
+            <a
+              href="http://medium.com/@glowingkitty-led"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link"
+            >
+              <img
+                src="images/akar-icons_medium-fill.svg"
+                class="socialmediaicon"
+              />
+            </a>
+            <a
+              href="http://patreon.com/glowingkitty"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link1"
+            >
+              <img
+                src="images/bxl_patreon.svg"
+                class="socialmediaicon"
+              />
+            </a>
+            <a
+              href="https://instagram.com/glowing_kitty"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link2"
+            >
+              <img
+                src="images/ant-design_instagram-filled.svg"
+                class="socialmediaicon"
+              />
+            </a>
+          </div>
+         
+        <!-- START - We recommend to place the below code where you want the form in your website html  -->
+        <div class="sib-form" style="text-align: center;">
+        <div id="sib-form-container" class="sib-form-container">
+            <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+                </svg>
+                <span class="sib-form-message-panel__inner-text">
+                                Your subscription could not be saved. Please try again.
+                            </span>
+            </div>
+            </div>
+            <div></div>
+            <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
+            <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+                <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+                <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+                </svg>
+                <span class="sib-form-message-panel__inner-text">
+                                Your subscription has been successful.
+                            </span>
+            </div>
+            </div>
+            <div></div>
+            <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(255,255,255,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; overflow:hidden; height: 0px; padding: 0px; opacity: 0;">
+            <form id="sib-form" method="POST" action="https://6b56232f.sibforms.com/serve/MUIEAOWjO_qO8JOOfU8nO05gLWpw26zvY9fCgwzGbPzEBc-NNkIb7ZPWW9-Vcn67x52ub6B1Pr5uQjbc0aZDK_My4I__eJqhInIz5UJozAS8zw_tZ1jaT-AjOfWRnlziJOY9J82rYQJMrWgjl_KRtDFdjUTP4PCYb_xKstFu_euB9D_lwIHrgRJ0slewEx2nlk20GmgLo8YYwyRy" data-type="subscription">
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="font-size:16px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#3C4858; background-color:transparent;">
+                    <div class="sib-text-form-block">
+                    <p>Subscribe to our newsletter and stay updated.</p>
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-input sib-form-block">
+                    <div class="form__entry entry_block">
+                    <div class="form__label-row ">
+                        <label class="entry__label" style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;LexendDeca-Regular&quot;; color:#3c4858;" for="EMAIL" data-required="*">
+                        Enter your email address to subscribe
+                        </label>
+
+                        <div class="entry__field">
+                        <input class="input" type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
+                        </div>
+                    </div>
+
+                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                    </label>
+                    <label class="entry__specification" style="font-size:12px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#8390A4;">
+                        Provide your email address to subscribe. For e.g abc@xyz.com
+                    </label>
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-optin sib-form-block">
+                    <div class="form__entry entry_mcq">
+                    <div class="form__label-row ">
+                        <div class="entry__choice">
+                        <label>
+                            <input type="checkbox" class="input_replaced" value="1" id="OPT_IN" name="OPT_IN" />
+                            <span class="checkbox checkbox_tick_positive"></span><span style="font-size:14px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#3C4858; background-color:transparent;"><p>I agree to receive your newsletters and accept the data privacy statement.</p></span> </label>
+                        </div>
+                    </div>
+                    <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
+                    </label>
+                    <label class="entry__specification" style="font-size:12px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#8390A4;">
+                        You may unsubscribe at any time using the link in our newsletter.
+                    </label>
+                    </div>
+                </div>
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-form__declaration">
+                    <div class="declaration-block-icon">
+                    <svg class="icon__SVG" width="0" height="0" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                        <symbol id="svgIcon-sphere" viewBox="0 0 63 63">
+                            <path class="path1" d="M31.54 0l1.05 3.06 3.385-.01-2.735 1.897 1.05 3.042-2.748-1.886-2.738 1.886 1.044-3.05-2.745-1.897h3.393zm13.97 3.019L46.555 6.4l3.384.01-2.743 2.101 1.048 3.387-2.752-2.1-2.752 2.1 1.054-3.382-2.745-2.105h3.385zm9.998 10.056l1.039 3.382h3.38l-2.751 2.1 1.05 3.382-2.744-2.091-2.743 2.091 1.054-3.381-2.754-2.1h3.385zM58.58 27.1l1.04 3.372h3.379l-2.752 2.096 1.05 3.387-2.744-2.091-2.75 2.092 1.054-3.387-2.747-2.097h3.376zm-3.076 14.02l1.044 3.364h3.385l-2.743 2.09 1.05 3.392-2.744-2.097-2.743 2.097 1.052-3.377-2.752-2.117 3.385-.01zm-9.985 9.91l1.045 3.364h3.393l-2.752 2.09 1.05 3.393-2.745-2.097-2.743 2.097 1.05-3.383-2.751-2.1 3.384-.01zM31.45 55.01l1.044 3.043 3.393-.008-2.752 1.9L34.19 63l-2.744-1.895-2.748 1.891 1.054-3.05-2.743-1.9h3.384zm-13.934-3.98l1.036 3.364h3.402l-2.752 2.09 1.053 3.393-2.747-2.097-2.752 2.097 1.053-3.382-2.743-2.1 3.384-.01zm-9.981-9.91l1.045 3.364h3.398l-2.748 2.09 1.05 3.392-2.753-2.1-2.752 2.096 1.053-3.382-2.743-2.102 3.384-.009zM4.466 27.1l1.038 3.372H8.88l-2.752 2.097 1.053 3.387-2.743-2.09-2.748 2.09 1.053-3.387L0 30.472h3.385zm3.069-14.025l1.045 3.382h3.395L9.23 18.56l1.05 3.381-2.752-2.09-2.752 2.09 1.053-3.381-2.744-2.1h3.384zm9.99-10.056L18.57 6.4l3.393.01-2.743 2.1 1.05 3.373-2.754-2.092-2.751 2.092 1.053-3.382-2.744-2.1h3.384zm24.938 19.394l-10-4.22a2.48 2.48 0 00-1.921 0l-10 4.22A2.529 2.529 0 0019 24.75c0 10.47 5.964 17.705 11.537 20.057a2.48 2.48 0 001.921 0C36.921 42.924 44 36.421 44 24.75a2.532 2.532 0 00-1.537-2.336zm-2.46 6.023l-9.583 9.705a.83.83 0 01-1.177 0l-5.416-5.485a.855.855 0 010-1.192l1.177-1.192a.83.83 0 011.177 0l3.65 3.697 7.819-7.916a.83.83 0 011.177 0l1.177 1.191a.843.843 0 010 1.192z" fill="#0092FF"></path>
+                        </symbol>
+                        </defs>
+                    </svg>
+                    <svg class="svgIcon-sphere" style="width:63px; height:63px;">
+                        <use xlink:href="#svgIcon-sphere"></use>
+                    </svg>
+                    </div>
+                    <p style="font-size:14px; text-align:left; font-family:&quot;LexendDeca-Regular&quot;; color:#687484; background-color:transparent;">
+                    We use Sendinblue as our marketing platform. By Clicking below to submit this form, you acknowledge that the information you provided will be transferred to Sendinblue for processing in accordance with their <a target="_blank" class="clickable_link" href="https://www.sendinblue.com/legal/termsofuse/">terms of use</a>
+                    </p>
+                </div>
+
+                </div>
+                <div style="padding: 8px 0;">
+                <div class="sib-form-block" style="text-align: left">
+                    <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:&quot;LexendDeca-Regular&quot;; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
+                    <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                        <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+                    </svg>
+                    SUBSCRIBE
+                    </button>
+                </div>
+                </div>
+
+                <input type="text" name="email_address_check" value="" class="input--hidden">
+                <input type="hidden" name="locale" value="en">
+                <p class="entry__specification" style="font-size: 12px; text-align: left; font-family: Roboto, sans-serif; color: #8390A4; margin: 8px 0 0 16px;">
+                Never submit passwords through this form.
+                </p>
+            </form>
+            </div>
+        </div>
+        </div>
+        <!-- END - We recommend to place the below code where you want the form in your website html  -->
+
+
+        </div>
+        <div class="home-footer">
+          <div class="home-footer-links">
+            <a
+              rel="noreferrer noopener"
+              class="home-link3 footerlink"
+              onclick="triggerprivacy();"
+              style="opacity:0.5"
+            >
+              Privacy
+            </a>
+            <a
+              href="http://github.com/glowingkitty?tab=repositories"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="home-link4"
+            >
+              <img
+                alt="image"
+                src="images/akar-icons_github-fill.svg"
+                class="home-image4 socialmediaicon"
+              />
+            </a>
+            <a
+              rel="noreferrer noopener"
+              class="home-link5 footerlink"
+              onclick="triggerimprint();"
+              style="opacity:0.5"
+            >
+              Imprint
+            </a>
+          </div>
+          <div class="home-legaltext">
+            <span id="privacy" class="legal_text_inside">
+              <span><strong>Introduction</strong></span>
+              <br />
+              <span>
+                This policy sets out the different areas where user privacy is
+                concerned and outlines the obligations &amp; requirements of the
+                users, the website and website owner. Furthermore the way this
+                website processes, stores and protects user data and information
+                will also be detailed within this policy.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>Email address</strong></span>
+              <br />
+              <span>
+                If you subscribe to our newsletter, we send your e-mail address
+                to Mailchimp, where we manage our newsletter subscribers and
+                send newsletter emails from. Check our their privacy policies
+                here for more details on how they process your data.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>Access logs</strong></span>
+              <br />
+              <span>
+                The service hosting this website stores access logs, like your
+                IP address &amp; device information. This data is not accessible
+                to and not readable for the owner of this website. The hosting
+                service, GitHub, has their privacy policy available <a href="https://docs.github.com/en/github/site-policy/github-privacy-statement" target="_blank" style="font-style: italic;"><strong>here</strong></a>:
+                
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>Cookies</strong></span>
+              <br />
+              <span>This website does not use any cookies.</span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>External links</strong></span>
+              <br />
+              <span>
+                We do not have any control over other other websites which we
+                link to on this website. Be aware that all the linked websites
+                (Instagram, GitHub, Medium and so on) will use cookies and track
+                you. Check out their privacy policies for more details.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>Changes to policy</strong></span>
+              <br />
+              <span>
+                Changes in this policy will be posted on this page. You are
+                advised to check this page regularly to view the most recent
+                privacy policy.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>Your data, your rights</strong></span>
+              <br />
+              <span>You have the following rights regarding your data:</span>
+              <br />
+              <span>Right to information</span>
+              <br />
+              <span>Right to correction or deletion</span>
+              <br />
+              <span>Right to restriction of processing</span>
+              <br />
+              <span>Right to refuse processing</span>
+              <br />
+              <span>Right to data transferability</span>
+              <br />
+              <span>
+                In addition, you have the right to complain to a data protection
+                supervisory authority regarding our processing of your personal
+                data.
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span>
+                Message us in case you want to request or delete your data:
+              </span>
+              <br />
+              <img src="images/text1.svg" style="height:14px; display: inline-block"/>
+              <span style="opacity:0">(email address)</span>
+              <br />
+              <span></span>
+            </span>
+            <span id="imprint" class="legal_text_inside">
+              <span><strong>This website is operated by</strong></span>
+              <br />
+              <span></span>
+              <br />
+              <img src="images/text2.svg" style="height:auto; display: inline-block"/>
+              <span style="opacity:0">(Name &amp; address)</span>
+              <br />
+              <span></span>
+              <br />
+              <span></span>
+              <br />
+              <span></span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>Contact</strong></span>
+              <br />
+              <span>Telephone: <img src="images/text3.svg" style="height:14px; display: inline-block"/><span style="opacity:0">(phone number)</span></span>
+              <br />
+              <span>Email: <img src="images/text4.svg" style="height:14px; display: inline-block"/><span style="opacity:0">(email address)</span></span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>VAT-ID</strong></span>
+              <br />
+              <span>
+                Sales tax identification number according to §27a Value Added
+                Tax Act: <img src="images/text5.svg" style="height:14px; display: inline-block"/><span style="opacity:0">(VAT-ID)</span>
+              </span>
+              <br />
+              <span></span>
+              <br />
+              <span><strong>EU Dispute Settlement</strong></span>
+              <br />
+              <span>
+                The European Commission provides a platform for online dispute
+                resolution (OS): https://ec.europa.eu/consumers/odr/.
+              </span>
+              <br />
+              <span>Our e-mail address can be found above in the imprint.</span>
+              <br />
+              <span></span>
+              <br />
+              <span>
+                <strong>Consumer dispute resolution/universal arbitration board</strong>
+              </span>
+              <br />
+              <span>
+                We are not willing or obliged to participate in dispute
+                settlement procedures before a consumer arbitration board.
+              </span>
+              <br />
+              <span></span>
+            </span>
+          </div>
+          <div class="home-designed-by-glowingkitty">
+            <img
+              src="images/designedbyglowingkitty.svg"
+              alt="image"
+              class="home-image5"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+<footer>
+    <!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+    <script>
+      window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
+      window.LOCALE = 'en';
+      window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+      window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
+
+      window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+
+
+
+
+      window.translation = {
+          common: {
+          selectedList: '{quantity} list selected',
+          selectedLists: '{quantity} lists selected'
+          }
+      };
+
+      var AUTOHIDE = Boolean(0);
+
+    </script>
+    <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+    <script>
+      var images = ["glowlight-1500w.jpeg","glowtower.jpeg","glowtube.jpeg","magiqwand.jpeg","glowtube_reading_light.jpeg","glowband.jpeg"];
+      var i = 1;
+
+      var imageslider = setInterval(function(){
+        if (i==images.length){
+          i = 0;
+        }
+        console.log("show image");
+        console.log(images[i]);
+        document.getElementById("headerimage").style.backgroundImage = "linear-gradient(0deg, rgb(0, 0, 0) 0.00%,rgba(0, 0, 0, 0) 99.00%),url('images/"+images[i]+"')";
+        i+=1;
+      },5000); //delay is in milliseconds 
+    </script>
+
+
+    <!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+    <!-- End Sendinblue Form -->
+</footer>
+  
+</html>
